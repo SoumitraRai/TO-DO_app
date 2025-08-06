@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import config from './config';
 
-const API_URL = 'http://localhost:5000/todos';
+const API_URL = `${config.API_URL}/todos`;
 
 function App() {
   // Our todo list and inputs
